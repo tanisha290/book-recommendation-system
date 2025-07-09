@@ -1,5 +1,12 @@
 deployed project: https://brs-python-ac4b406b348b.herokuapp.com/
 
+Video:
+
+
+https://github.com/user-attachments/assets/1c7f367b-9118-4d1b-af89-ec5b7aa43442
+
+
+
 Some screenshots:
 ![image](https://github.com/user-attachments/assets/45ab13b9-bbcd-4741-bd02-c3dc87286ffc)
 
