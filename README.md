@@ -1,4 +1,4 @@
-deployed project: https://brs-python-ac4b406b348b.herokuapp.com/
+deployed project: https://book-recommendation-system-9xz0.onrender.com/
 
 Video:
 
