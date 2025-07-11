@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Recommendation System</title>
+    <style>
+        body {
+            background-color: #001f4d;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        input, button {
+            background: #003366;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            padding: 8px;
+            margin: 5px 0;
+        }
+        h1, h2 {
+            color: #ffffff;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Book Recommendation System</h1>
+    <form method="post">
+        <input type="text" name="book_name" placeholder="Enter a book name" required>
+        <button type="submit">Recommend</button>
+    </form>
+    <h2>Recommendations:</h2>
+    <ul>
+        {% for rec in recommendations %}
+            <li>
+                <strong>{{ rec[0] }}</strong> by {{ rec[1] }}<br>
+                <img src="{{ rec[2] }}" width="100">
+            </li>
+        {% endfor %}
+    </ul>
+    <h2>Popular Books:</h2>
+    <ul>
+        {% for _, row in popular.iterrows() %}
+            <li>
+                <strong>{{ row['Book-Title'] }}</strong> by {{ row['Book-Author'] }}<br>
+                <img src="{{ row['Image-URL-M'] }}" width="100">
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
